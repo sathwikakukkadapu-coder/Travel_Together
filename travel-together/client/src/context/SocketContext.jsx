@@ -11,7 +11,7 @@ import { useAuth } from './AuthContext';
 
 const SocketContext = createContext(null);
 
-const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || 'http://localhost:5000';
+const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || "https://traveltogether-production.up.railway.app";
 
 export const SocketProvider = ({ children }) => {
   const { isAuthenticated, token } = useAuth();
