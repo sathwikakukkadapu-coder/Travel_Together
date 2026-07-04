@@ -70,8 +70,7 @@ const Chat = () => {
   // ── Auto-select when URL has userId ──────────────────────────────────
   useEffect(() => {
     if (urlUserId) openConversation(urlUserId);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [urlUserId]);
+   },[ urlUserId]);
 
   // ── Real-time: incoming messages ──────────────────────────────────────
   useEffect(() => {
